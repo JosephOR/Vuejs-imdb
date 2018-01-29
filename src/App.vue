@@ -1,22 +1,15 @@
 <template>
   <div id="app">
-   <h1>{{ greeting }}</h1>
-    <p>{{ message() }}</p>
+    <navBar></navBar>
+    <router-view></router-view> 
   </div>
 </template>
 
 <script>
 export default {
-  data () {
-    return {
-      greeting: 'Welcome to Your Vue.js App'
-    }
-  },
-    methods: {
-  	  message: function() {
-  		return 'Message from method'
-      }
-    }
+  data: function() {
+    return {}
+  }
 }
 </script>
 
